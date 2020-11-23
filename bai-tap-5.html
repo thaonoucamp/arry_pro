@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dem so nguyen trong trong </title>
+</head>
+<body>
+<script>
+    let arr = [0,8,-1,2,-6,6,1,9,-9,0];
+    let size= arr.length;
+    let count = 0;
+    function countNegInt() {
+        for (let i = 0; i < size; i++) {
+            if(arr[i]<0) {
+                count++;
+            }
+        }
+        document.write("co : "+count+" so nguyen am");
+    }
+    countNegInt(arr);
+</script>
+</body>
+</html>

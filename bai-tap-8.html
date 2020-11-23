@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sap xep mang giam dan</title>
+</head>
+<body>
+<script>
+    let arr = [0,8,1,2,6,-6,-1,9,-9,0];
+    let size= arr.length;
+    let max;
+    orderDown();
+    function orderDown() {
+        for (let i = 0; i < size ; i++) {
+            for (let j = i+1; j < size; j++) {
+                if(arr[i]<arr[j]) {
+                    max = arr[i];
+                    arr[i]=arr[j];
+                    arr[j] = max;
+                }
+            }
+
+        }
+        document.write(arr);
+
+    }
+</script>
+</body>
+</html>

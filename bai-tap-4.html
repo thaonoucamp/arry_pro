@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dao nguoc phan tu</title>
+</head>
+<body>
+<script>
+    let arr = [0,9,9,1,6,6,2,1,8,0];
+    let size= arr.length;
+
+     function invertItem() {
+         for (let i = 0; i < size/2; i++) {
+                 let temp = arr[i];
+                 arr[i]=arr[(size-1)-i];
+                 arr[(size-1)-i]=temp;
+             }
+
+         document.write(arr);
+     }
+     invertItem(arr);
+</script>
+</body>
+</html>

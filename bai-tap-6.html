@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so 5 trong mang</title>
+</head>
+<body>
+<script>
+    let arr = [0,8,1,2,5,6,11,9,-9,7];
+    let size= arr.length;
+    let xNumber = prompt("moi nhap so");
+    let countIndex = -1;
+    findValue5();
+
+    function findValue5() {
+        for (let i = 0; i < size; i++) {
+            if(xNumber==arr[i]) {
+                countIndex  = i;
+            }
+        }
+        if(countIndex == -1) {
+            alert(xNumber + " khong ton tai trong mang");
+        }else{
+            alert(xNumber+" ton tai trong mang tai vi tri "+countIndex);
+
+        }
+    }
+</script>
+</body>
+</html>

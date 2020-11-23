@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 2</title>
+</head>
+<body>
+<script>
+    let arr = [0,8,1,2,6,6,1,9,9,0];
+    let size= arr.length;
+    let maxValue = arr[0];
+    let xIndex;
+
+    function findMaxValue() {
+        for (let i = 1; i < size; i++) {
+            if(arr[i]>maxValue) {
+                maxValue=arr[i];
+                xIndex=i;
+            }
+        }
+        document.write("gia tri lon nhat : "+maxValue + "tai vi tri : "+xIndex);
+    }
+    findMaxValue();
+</script>
+</body>
+</html>

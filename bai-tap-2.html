@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gia tri lon nhat</title>
+</head>
+<body>
+<script>
+    let arr = [0,8,-1,2,-6,6,1,9,-9,0];
+    let size= arr.length;
+    let max = arr[0];
+    function findMaxValue() {
+        for (let i = 1; i < size; i++) {
+           if (arr[0]<arr[i]) {
+               max=arr[i];
+           }
+        }
+        document.write("gia tri lon nhat la : "+max);
+    }
+    findMaxValue(arr);
+</script>
+</body>
+</html>

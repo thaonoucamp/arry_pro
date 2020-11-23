@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim va xoa phan tu</title>
+</head>
+<body>
+<script>
+    let arr = [0,8,1,2,6,5,-1,9,-9,0];
+    let size= arr.length;
+    let xNumber = prompt("nhap vao so can xoa");
+    findDelete();
+     function findDelete () {
+         for (let i = 0; i < size; i++) {
+             if (xNumber == arr[i]) {
+                 for (j = i; j < size; j++) {
+                     arr[j] = arr[j + 1];
+                 }
+                 arr[size - 1] = 0;
+             }
+         }
+         document.write(arr)
+     }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gia tri trung binh</title>
+</head>
+<body>
+<script>
+    let arr = [0,8,1,2,6,6,1,9,9,0];
+    let size= arr.length;
+    let sum = 0;
+
+    function avegValue() {
+        for (let i = 0; i < size ; i++) {
+            sum += arr[i];
+        }
+        document.write("sum" + sum);
+        let averg = sum/size;
+        document.write("gia tri trung binh cua cac phan tu : "+ averg);
+    }
+    avegValue(arr);
+
+</script>
+</body>
+</html>
